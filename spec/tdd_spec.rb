@@ -3,4 +3,3 @@ RSpec.describe Tdd do
     expect(Tdd::VERSION).not_to be nil
   end
 end
-
