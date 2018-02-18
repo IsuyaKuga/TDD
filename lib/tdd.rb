@@ -1,5 +1,5 @@
 require "tdd/version"
-require "tdd/dollar"
+require "tdd/money"
 
 module Tdd
   # Your code goes here...
