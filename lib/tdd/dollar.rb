@@ -1,11 +1,17 @@
 module Tdd
   class Dollar
+    include Comparable
+    attr_reader :amount
     def initialize(amount)
-      @amount = 10
+      @amount = amount
     end
 
     def times(multiplier)
-      @amount
+      self.class.new(@amount * multiplier)
+    end
+
+    def <=>(other)
+      @amount <=> other.amount
     end
   end
 end
